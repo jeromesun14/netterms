@@ -7,6 +7,22 @@ Computer Network Terms Glossary
 
 > We propose coflow, a networking abstraction to express the communication requirements of prevalent data parallel programming paradigms. Coflows make it easier for the applications to convey their communication semantics to the network, which in turn enables the network to better optimize common communication patterns.
 
+## data locality
+数据局部性
+
+## DCN
+Data Center Networks
+
+## Job, task and data
+* job, task + data 
+* task, use CPU and memory 
+* data, use network and storage
+
+## Low latency analytics
+
+## low overhead
+低开销
+
 ## Parallelism
 From [concurrency-basics.pdf](http://www.cs.umd.edu/class/fall2013/cmsc433/lectures/concurrency-basics.pdf)
 
@@ -33,6 +49,21 @@ Example: convert all characters in an array to upper-case
 * Several functions on the same data: average, minimum, binary or, geometric mean
 * No dependencies between the tasks, so all can run in parallel 
 
+## PFC
+Priority-based Flow Control
+
+## RDMA
+Remote Direct Memory Access.
+
+## RSA
+[腾讯云 - 服务器资源池化技术趋势](http://www.cctime.com/html/2015-4-22/20154221716419323.htm)。服务器资源池化。Intel提出了RSA（Rack Scale Architecture）架构、Google携手伯克利大学提出了WSC（Warehouse Scale Computer）的概念。Intel的RSA架构已经有了清晰的架构设计和路标，目前原型机已经面世。而Google的WSC仍在概念阶段，只有简单的时间表，2020年。
+
+Intel RSA(Rack Scale Architecture) 架构提供了一种机架重构的方案，其思想是将几种重要的资源池化：CPU 池、内存池、存储池，池化的RSA 模型可以很方便地进行管理和扩展，并降低运行维护成本。业务软件或者OS的视角看到的还是一台传统的服务器，有CPU、内存、硬盘、网卡等。
+
+服务器重构并资源池化后，面临的最大的挑战就是：
+
+* 挑战一：互连与时延（拓扑结构与接口）；
+* 挑战二：配置与管理（协议与监控）。
 
 ## Speculative execution
 
@@ -52,3 +83,9 @@ From [wikipedia](https://en.wikipedia.org/wiki/Speculative_execution)
 详见“Speculative execution”。
 
 ## state-of-art
+
+## tight coupling
+紧耦合
+
+
+
