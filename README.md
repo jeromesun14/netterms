@@ -1,2 +1,54 @@
 # netterms
 Computer Network Terms Glossary
+
+## Coflow
+* 一个详细的PPT：[coflow-talk](http://www.mosharaf.com/wp-content/uploads/coflow-talk-qual-04112013.v2.ppsx)
+* 论文PDF：[Coflow: A Networking Abstraction for Cluster Applications](http://conferences.sigcomm.org/hotnets/2012/papers/hotnets12-final51.pdf)
+
+> We propose coflow, a networking abstraction to express the communication requirements of prevalent data parallel programming paradigms. Coflows make it easier for the applications to convey their communication semantics to the network, which in turn enables the network to better optimize common communication patterns.
+
+## Parallelism
+From [concurrency-basics.pdf](http://www.cs.umd.edu/class/fall2013/cmsc433/lectures/concurrency-basics.pdf)
+
+### Parallelism
+* Data parallelism
+ + The same task run on different data in parallel
+* Task parallelism
+ + Different tasks running on the same data
+* Hybrid data/task parallelism
+ + A parallel pipeline of tasks, each of which might be data parallel
+* Unstructured
+ + Ad hoc combination of threads with no obvious toplevel structure 
+
+### Data Parallelism example
+
+Example: convert all characters in an array to upper-case
+
+* Can divide parts of the data between different tasks and perform the tasks in parallel
+* Key: no dependencies between the tasks that cause their results to be ordered 
+
+
+### Task Parallelism example
+
+* Several functions on the same data: average, minimum, binary or, geometric mean
+* No dependencies between the tasks, so all can run in parallel 
+
+
+## Speculative execution
+
+典型应用：Apache Hadoop，[Hadoop中Speculative Task调度策略](http://dongxicheng.org/mapreduce/hadoop-speculative-task)。
+
+Speculative Task，又叫推测式任务，是指在分布式集群环境下，因为程序bug，负载不均衡或者资源分布不均，造成同一个job的多个task运行速度不一致，有的task运行速度明显慢于其他task（比如：一个job的某个task进度只有10%，而其他所有task已经运行完毕），则这些task拖慢了作业的整体执行进度，为了避免这种情况发生，Hadoop会为该task启动speculative task，让该speculative task与原始task同时运行，哪个先运行完，则使用它的结果。
+
+Speculative Task思路是以空间换时间的，同时启动多个相同task，哪个完成的早，则采用哪个task的结果，这样明显可以提高任务计算速度，但是，这样却会占用更多的资源，在集群资源紧缺的情况下，合理的控制Speculative Task，可在多用少量资源情况下，减少大作业的计算时间。
+
+
+From [wikipedia](https://en.wikipedia.org/wiki/Speculative_execution)
+
+> Speculative execution is an optimization technique where a computer system performs some task that may not be actually needed. The main idea is to do work before it is known whether that work will be needed at all, so as to prevent a delay that would have to be incurred by doing the work after it is known whether it is needed. If it turns out the work was not needed after all, any changes made by the work are reverted and the results are ignored.
+> The objective is to provide more concurrency if extra resources are available. This approach is employed in a variety of areas, including branch prediction in pipelined processors, prefetching memory and files, and optimistic concurrency control in database systems.
+
+## Speculative Task
+详见“Speculative execution”。
+
+## state-of-art
