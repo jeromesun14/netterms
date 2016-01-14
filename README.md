@@ -84,6 +84,9 @@ From [wikipedia](https://en.wikipedia.org/wiki/Speculative_execution)
 
 ## state-of-art
 
+## TDL
+Topology Description Language
+
 ## tight coupling
 紧耦合
 
