@@ -82,7 +82,14 @@ From [wikipedia](https://en.wikipedia.org/wiki/Speculative_execution)
 ## Speculative Task
 详见“Speculative execution”。
 
-## state-of-art
+## State of the art
+
+From [zh.wikipedia](https://zh.wiktionary.org/wiki/state_of_the_art)
+> 最新技術。
+> 在專利申請之前，使用或以任何其他方法，藉由書面或口頭敘述將每件事提供給大眾，或者在國外申請，以便具有該事物的優先權。
+
+From [en.wikipedia](https://en.wikipedia.org/wiki/State_of_the_art)
+> The term "state of the art" refers to the highest level of general development, as of a device, technique, or scientific field achieved at a particular time. It also refers to the level of development (as of a device, procedure, process, technique, or science) reached at any particular time as a result of the common methodologies employed. The term has been used since 1910, and has become both a common term in advertising and marketing, and a legally significant phrase with respect to both patent law and tort liability. In advertising, the phrase is often used to convey that a product is made with the best possible technology, but it has been noted that "the term 'state of the art' requires little proof on the part of advertisers", as it is considered mere puffery.[1] The use of the term in patent law, by contrast, "does not connote even superiority, let alone the superlative quality the ad writers would have us ascribe to the term".[2]
 
 ## TDL
 Topology Description Language
