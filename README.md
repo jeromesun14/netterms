@@ -13,6 +13,12 @@ Computer Network Terms Glossary
 ## DCN
 Data Center Networks
 
+## East-west traffic （东西流量）
+数据中心流量的一种类型，Server <--> Server 的流量。
+与之相对应的，South-north traffic （南北流量），Server --> Client 的流量。
+
+疑问：数据中心之间的流量，也称为东西流量吗？
+
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
@@ -64,6 +70,10 @@ Intel RSA(Rack Scale Architecture) 架构提供了一种机架重构的方案，
 
 * 挑战一：互连与时延（拓扑结构与接口）；
 * 挑战二：配置与管理（协议与监控）。
+
+## South-north traffic
+
+见`East-west traffic`
 
 ## Speculative execution
 
