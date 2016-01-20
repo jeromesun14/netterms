@@ -19,6 +19,16 @@ Data Center Networks
 
 疑问：数据中心之间的流量，也称为东西流量吗？
 
+## Erasure code
+
+一种数据保护（恢复）技术，目前常用于云存储。阿里将其引入TFS系统，用于降低TFS存储成本，[链接](http://csrd.aliapp.com/?p=1841)。
+
+From [很酷的糾刪碼(erasure code)技術](https://samkuo.me/post/2015/09/python-with-erasure-code/)
+> 簡單地說 ， 糾刪碼是一種演算法 ， 可以將 K 個相同大小的資料區塊 (data block)， 轉成 (K + M) 個編碼後的區塊 ， 接收者可以從這 (K + M) 個區塊中 ， 任選 K 個區塊 ， 便足以還原編碼前的 K 個資料區塊 。 也就是說 ， 它允許最多 M 個資料區塊在傳輸或讀取過程中遺失或錯誤 ！
+
+From [en.wikipedia](https://en.wikipedia.org/wiki/Erasure_code)
+> In information theory, an erasure code is a forward error correction (FEC) code for the binary erasure channel, which transforms a message of k symbols into a longer message (code word) with n symbols such that the original message can be recovered from a subset of the n symbols. The fraction r = k/n is called the code rate, the fraction k’/k, where k’ denotes the number of symbols required for recovery, is called reception efficiency.
+
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
@@ -60,6 +70,10 @@ Priority-based Flow Control
 
 ## RDMA
 Remote Direct Memory Access.
+
+**疑问**：RDMA 专用交换机？？
+
+> Common RDMA implementations include the Virtual Interface Architecture, RDMA over Converged Ethernet (RoCE),[7] InfiniBand, and iWARP. [链接](https://en.wikipedia.org/wiki/Remote_direct_memory_access#Acceptance)
 
 ## RSA
 [腾讯云 - 服务器资源池化技术趋势](http://www.cctime.com/html/2015-4-22/20154221716419323.htm)。服务器资源池化。Intel提出了RSA（Rack Scale Architecture）架构、Google携手伯克利大学提出了WSC（Warehouse Scale Computer）的概念。Intel的RSA架构已经有了清晰的架构设计和路标，目前原型机已经面世。而Google的WSC仍在概念阶段，只有简单的时间表，2020年。
