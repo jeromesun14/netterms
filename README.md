@@ -1,6 +1,13 @@
 # netterms
 Computer Network Terms Glossary
 
+## bisection bandwidth
+[H3C 解释](http://www.h3c.com.cn/Solution/Data_Center_Solutions/Base_Network/How_Do_I_Do_It/White_Paper/201106/717013_30004_0.htm)：
+> 对分带宽（bisection bandwidth）”是考量具有逐级收敛特征的网络拓扑的带宽利用率的单位。这个概念可简单的理解为：“将网络中的主机分成同样大小的两组，且主机都使用相同的网络链路进行互联，“对分带宽”就是这两组主机之间通信的总链路带宽。
+
+[en.wikipedia](https://en.wikipedia.org/wiki/Bisection_bandwidth)：
+> In computer networking, if a network is segmented into two equal parts, this is the bandwidth between the two parts.[1] Typically, this refers to the worst-case segmentation, but being of equal parts is critical to the definition, as it refers to an actual bisection of the network.
+
 ## Coflow
 * 一个详细的PPT：[coflow-talk](http://www.mosharaf.com/wp-content/uploads/coflow-talk-qual-04112013.v2.ppsx)
 * 论文PDF：[Coflow: A Networking Abstraction for Cluster Applications](http://conferences.sigcomm.org/hotnets/2012/papers/hotnets12-final51.pdf)
@@ -135,6 +142,18 @@ Topology Description Language
 
 ## tight coupling
 紧耦合
+
+## WDM
+论文[Quartz: A New Design Element for Low-Latency DCNs
+Yunpeng](https://cs.uwaterloo.ca/~bernard/sigc318-liu.pdf)将 WDM + 普通交换机 用于数据中心，构成大二层网络，从根本上解决 server 到 server 的时延问题，而不是传统的增加 `bisection bandwidth`。
+
+Google 的论文 [Scaling Optical Interconnects in Datacenter Networks Opportunities and Challenges for WDM](http://www.australianscience.com.au/research/google/36670.pdf)，描述将 WDM 用于数据中心的挑战与机遇。
+
+以上两篇论文引入`把广域网技术用于数据中心网络的理念`。
+
+[en.wikipedia](https://en.wikipedia.org/wiki/Wavelength-division_multiplexing)
+> In fiber-optic communications, wavelength-division multiplexing (WDM) is a technology which multiplexes a number of optical carrier signals onto a single optical fiber by using different wavelengths (i.e., colors) of laser light. This technique enables bidirectional communications over one strand of fiber, as well as multiplication of capacity.
+
 
 
 
