@@ -20,7 +20,6 @@ Data Center Networks
 疑问：数据中心之间的流量，也称为东西流量吗？
 
 ## Erasure code
-
 一种数据保护（恢复）技术，目前常用于云存储。阿里将其引入TFS系统，用于降低TFS存储成本，[链接](http://csrd.aliapp.com/?p=1841)。
 
 From [很酷的糾刪碼(erasure code)技術](https://samkuo.me/post/2015/09/python-with-erasure-code/)
@@ -28,6 +27,22 @@ From [很酷的糾刪碼(erasure code)技術](https://samkuo.me/post/2015/09/pyt
 
 From [en.wikipedia](https://en.wikipedia.org/wiki/Erasure_code)
 > In information theory, an erasure code is a forward error correction (FEC) code for the binary erasure channel, which transforms a message of k symbols into a longer message (code word) with n symbols such that the original message can be recovered from a subset of the n symbols. The fraction r = k/n is called the code rate, the fraction k’/k, where k’ denotes the number of symbols required for recovery, is called reception efficiency.
+
+## Fine-grained control
+
+粒度的概念，意为控制的粒度。
+[stackexchange 中 Hellion 对 fine-grained 含义的答复](http://english.stackexchange.com/questions/8348/what-does-fine-grained-mean)
+> When used in the context of "fine-grained control", for example, it carries the connotation of "very precise": a volume knob that gives you fine-grained control means that you can set your volume to the exact level that you desire, you don't have to choose only between "too quiet" and "too loud".
+
+From [en.wikipedia](https://en.wikipedia.org/wiki/Granularity) 关于 Granularity （粒度）的概念。
+
+> Granularity (also called "graininess", the quality of being grainy) is the extent to which a material or system is composed of distinguishable pieces or grains. It can either refer to the extent to which a larger entity is subdivided, or the extent to which groups of smaller indistinguishable entities have joined together to become larger distinguishable entities. For example, a kilometer broken into centimeters has finer granularity than a kilometer broken into meters. In contrast, molecules of photographic emulsion may clump together to form distinct noticeable granules, reflecting coarser granularity.
+
+## FSO
+vs. RF
+
+From [en.wikipedia](https://en.wikipedia.org/wiki/Free-space_optical_communication)
+> Free-space optical communication (FSO) is an optical communication technology that uses light propagating in free space to wirelessly transmit data for telecommunications or computer networking. "Free space" means air, outer space, vacuum, or something similar. This contrasts with using solids such as optical fiber cable or an optical transmission line. The technology is useful where the physical connections are impractical due to high costs or other considerations.
 
 ## Job, task and data
 * job, task + data 
