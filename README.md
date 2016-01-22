@@ -9,6 +9,8 @@ Computer Network Terms Glossary
 > In computer networking, if a network is segmented into two equal parts, this is the bandwidth between the two parts.[1] Typically, this refers to the worst-case segmentation, but being of equal parts is critical to the definition, as it refers to an actual bisection of the network.
 
 ## Coflow
+分布式任务中，在不同分布式 endpoint，存在多条并行 flow 的集合，每条 flow 都是独立的。整个并行任务的完成时间取决于最后一条流的完成时间。因此，称这个并行 flow 集为 **`Coflow`**。
+
 * 一个详细的PPT：[coflow-talk](http://www.mosharaf.com/wp-content/uploads/coflow-talk-qual-04112013.v2.ppsx)
 * 论文PDF：[Coflow: A Networking Abstraction for Cluster Applications](http://conferences.sigcomm.org/hotnets/2012/papers/hotnets12-final51.pdf)
 
