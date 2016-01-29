@@ -109,6 +109,12 @@ Intel RSA(Rack Scale Architecture) 架构提供了一种机架重构的方案，
 * 挑战一：互连与时延（拓扑结构与接口）；
 * 挑战二：配置与管理（协议与监控）。
 
+## SD-WAN (软件定义广域网)
+SDN for WAN 的理念。
+
+> 通信服务提供商（CSPs）包括运营商、托管服务提供商和有线电视运营商，他们现在面临的挑战是怎样在商品化宽带（如高速、廉价的互联网服务）中保证服务收入和利润。软件定义广域网（SD-WAN）解决方案似乎成为了通信服务提供商为用户提高托管服务价值的一剂良药。
+> 原文SDNLAB [《为什么通信服务提供商需要实现SD-WAN》](http://www.sdnlab.com/13759.html)
+
 ## South-north traffic
 
 见`East-west traffic`
