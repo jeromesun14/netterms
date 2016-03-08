@@ -44,6 +44,9 @@ From [很酷的糾刪碼(erasure code)技術](https://samkuo.me/post/2015/09/pyt
 From [en.wikipedia](https://en.wikipedia.org/wiki/Erasure_code)
 > In information theory, an erasure code is a forward error correction (FEC) code for the binary erasure channel, which transforms a message of k symbols into a longer message (code word) with n symbols such that the original message can be recovered from a subset of the n symbols. The fraction r = k/n is called the code rate, the fraction k’/k, where k’ denotes the number of symbols required for recovery, is called reception efficiency.
 
+## eSDK 
+Ecosystem SDK，是华为面向行业市场合作伙伴的二次开发平台。平台统一为SI/ISV提供华为各种产品的易集成、开放的功能接口。同时，根据行业应用场景，可提供具有针对性的预集成插件，助力合作伙伴快速构建满足客户个性化需求的差异化解决方案。
+
 ## Fine-grained control
 
 粒度的概念，意为控制的粒度。
