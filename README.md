@@ -63,6 +63,12 @@ vs. RF
 From [en.wikipedia](https://en.wikipedia.org/wiki/Free-space_optical_communication)
 > Free-space optical communication (FSO) is an optical communication technology that uses light propagating in free space to wirelessly transmit data for telecommunications or computer networking. "Free space" means air, outer space, vacuum, or something similar. This contrasts with using solids such as optical fiber cable or an optical transmission line. The technology is useful where the physical connections are impractical due to high costs or other considerations.
 
+## GSM-R
+From [en.wikipedia](https://en.wikipedia.org/wiki/GSM-R)
+> GSM-R, Global System for Mobile Communications – Railway or GSM-Railway is an international wireless communications standard for railway communication and applications.
+> 
+> A sub-system of European Rail Traffic Management System (ERTMS), it is used for communication between train and railway regulation control centres. The system is based on GSM and EIRENE – MORANE specifications which guarantee performance at speeds up to 500 km/h (310 mph), without any communication loss.
+
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
