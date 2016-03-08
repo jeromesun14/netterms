@@ -148,6 +148,10 @@ Intel RSA(Rack Scale Architecture) 架构提供了一种机架重构的方案，
 From [zh.wikipedia](https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F)
 > 数据采集与监控系统（supervisory control and data acquisition，简称SCADA）一般是有监控程序及数据收集能力的电脑控制系统。可以用在工业程序、基础设施或是设备中。
 
+样例：
+
+![SCADA](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/SCADA_schematic_overview-s.svg/484px-SCADA_schematic_overview-s.svg.png)
+
 ## SD-WAN (软件定义广域网)
 SDN for WAN 的理念。
 
