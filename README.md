@@ -63,6 +63,10 @@ vs. RF
 From [en.wikipedia](https://en.wikipedia.org/wiki/Free-space_optical_communication)
 > Free-space optical communication (FSO) is an optical communication technology that uses light propagating in free space to wirelessly transmit data for telecommunications or computer networking. "Free space" means air, outer space, vacuum, or something similar. This contrasts with using solids such as optical fiber cable or an optical transmission line. The technology is useful where the physical connections are impractical due to high costs or other considerations.
 
+## GPGPU
+From [zh.wikipedia](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E5%9B%BE%E5%BD%A2%E5%A4%84%E7%90%86%E5%99%A8)
+> 通用图形处理器（英语：General-purpose computing on graphics processing units，简称GPGPU或GP²U），利用处理图形任务的图形处理器来计算原本由中央处理器处理的通用计算任务，这些通用计算常常与图形处理没有任何关系。由于现代图形处理器强大的并行处理能力和可编程流水线，令流处理器可以处理非图形数据。特别在面对单指令流多数据流（SIMD），且数据处理的运算量远大于数据调度和传输的需要时，通用图形处理器在性能上大大超越了传统的中央处理器应用程序。
+
 ## GSM-R
 From [en.wikipedia](https://en.wikipedia.org/wiki/GSM-R)
 > GSM-R, Global System for Mobile Communications – Railway or GSM-Railway is an international wireless communications standard for railway communication and applications.
