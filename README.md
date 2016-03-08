@@ -16,6 +16,12 @@ Computer Network Terms Glossary
 
 > We propose coflow, a networking abstraction to express the communication requirements of prevalent data parallel programming paradigms. Coflows make it easier for the applications to convey their communication semantics to the network, which in turn enables the network to better optimize common communication patterns.
 
+## CPE 
+
+From [zh.wikipedia](https://zh.wikipedia.org/wiki/CPE)
+> CPE（英文全称：Customer-premises equipment）用户驻地设备，位于用户端的网络终端设备，用于与电信运营商对接服务。CPE包括：用户自己的服务器，主机，以及LAN设备（路由器，交换机，防火墙等）以及ISP负责安装的WAN设备（CSU/DSUs，调制解调器）。CPE可以将4G信号转换为WiFi信号。2015年第二季度，全球CPE市场收入约29亿美元。
+
+
 ## data locality
 数据局部性
 
