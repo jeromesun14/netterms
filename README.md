@@ -69,6 +69,10 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/GSM-R)
 > 
 > A sub-system of European Rail Traffic Management System (ERTMS), it is used for communication between train and railway regulation control centres. The system is based on GSM and EIRENE – MORANE specifications which guarantee performance at speeds up to 500 km/h (310 mph), without any communication loss.
 
+## ICT
+From [en.wikipedia](https://en.wikipedia.org/wiki/Information_and_communications_technology)
+> Information and communications technology (ICT) is an extended term for information technology (IT) which stresses the role of unified communications and the integration of telecommunications (telephone lines and wireless signals), computers as well as necessary enterprise software, middleware, storage, and audio-visual systems, which enable users to access, store, transmit, and manipulate information.
+
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
