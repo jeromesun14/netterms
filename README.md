@@ -28,6 +28,13 @@ Data Center Networks
 
 疑问：数据中心之间的流量，也称为东西流量吗？
 
+## eLTE
+From [Wikipedia](https://en.wikipedia.org/wiki/Huawei_4G_eLTE):
+> 4G eLTE is technology based on the LTE standard, the lower case e referring to a Huawei proprietary derivative of the LTE standard (referred to as "enhanced LTE) that is intended to provide wireless broadband data access with peak downlink levels of 50Mbit/s and 20Mbit/s uplink per site in 5 MHz 10 MHz and 15 MHz frequencies.
+
+eLTE 基于 LTE 标准，提供宽带接入服务。将传统的蜂窝网与 Internet 融合？
+也有的地方将 e 理解为“enterprise”
+
 ## Erasure code
 一种数据保护（恢复）技术，目前常用于云存储。阿里将其引入TFS系统，用于降低TFS存储成本，[链接](http://csrd.aliapp.com/?p=1841)。
 
