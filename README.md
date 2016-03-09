@@ -188,6 +188,13 @@ From [zh.wikipedia](https://zh.wiktionary.org/wiki/state_of_the_art)
 From [en.wikipedia](https://en.wikipedia.org/wiki/State_of_the_art)
 > The term "state of the art" refers to the highest level of general development, as of a device, technique, or scientific field achieved at a particular time. It also refers to the level of development (as of a device, procedure, process, technique, or science) reached at any particular time as a result of the common methodologies employed. The term has been used since 1910, and has become both a common term in advertising and marketing, and a legally significant phrase with respect to both patent law and tort liability. In advertising, the phrase is often used to convey that a product is made with the best possible technology, but it has been noted that "the term 'state of the art' requires little proof on the part of advertisers", as it is considered mere puffery.[1] The use of the term in patent law, by contrast, "does not connote even superiority, let alone the superlative quality the ad writers would have us ascribe to the term".[2]
 
+## TDM
+From [通信百科](http://baike.c114.net/view.asp?TDM)。VoIP 即是 Ethernet 对 TDM 的 IP 承载。
+
+> Time Division Multiplexing -- 时分复用 
+> 
+> TDM就是时分复用模式。时分复用是指一种通过不同信道或时隙中的交叉位脉冲，同时在同一个通信媒体上传输多个数字化数据、语音和视频信号等的技术。电信中基本采用的信道带宽为DS0，其信道宽为64kbps。
+
 ## TDL
 Topology Description Language
 
