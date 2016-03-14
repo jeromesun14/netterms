@@ -31,6 +31,9 @@ From [Target.com](http://searchaws.techtarget.com/definition/availability-zones)
 
 > We propose coflow, a networking abstraction to express the communication requirements of prevalent data parallel programming paradigms. Coflows make it easier for the applications to convey their communication semantics to the network, which in turn enables the network to better optimize common communication patterns.
 
+## CON
+CON （Content Oriented Networking），以内容为转发关键字的下一代网络。
+
 ## CPE 
 
 From [zh.wikipedia](https://zh.wikipedia.org/wiki/CPE)
