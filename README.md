@@ -1,6 +1,21 @@
 # netterms
 Computer Network Terms Glossary
 
+## AZ
+availability zones
+
+From [Target.com](http://searchaws.techtarget.com/definition/availability-zones)
+> Availability zones (AZs) are isolated locations within data center regions from which public cloud services originate and operate. Regions are geographic locations in which public cloud service providers' data centers reside. Businesses choose one or multiple worldwide availability zones for their services depending on business needs.
+> Businesses select availability zones for a variety of reasons, including compliance and proximity to end customers. Cloud administrators can also choose to replicate services across multiple availability zones to decrease latency or protect resources. Admins can move resources to another availability zone in the event of an outage. Certain cloud services may also be limited to particular regions or AZs.
+> 
+> Amazon Web Services (AWS) operates regions in the United States, South America, Europe and Asia Pacific. Each region contains between two and five availability zones that are geographically separate from one another. Regions are connected to one another through the internet. Each availability zone holds one or more data centers.
+> 
+> Microsoft Azure assembles availability sets -- VMs linked together for continuous operability -- into regions that are grouped into six geographies: United States, Europe, Asia Pacific, Japan, Brazil and Australia. Azure customers choose between Locally Redundant Storage, in which data is stored locally in the end users' primary region, or Geo Redundant Storage where data is stored more than 250 miles away from the primary region, but in the same geography.
+> 
+> Similar to AWS, Google Cloud Platform gathers data centers in regions comprised of zones. Google operates regions of data centers in central United States, Western Europe and East Asia.
+
+
+
 ## bisection bandwidth
 [H3C 解释](http://www.h3c.com.cn/Solution/Data_Center_Solutions/Base_Network/How_Do_I_Do_It/White_Paper/201106/717013_30004_0.htm)：
 > 对分带宽（bisection bandwidth）”是考量具有逐级收敛特征的网络拓扑的带宽利用率的单位。这个概念可简单的理解为：“将网络中的主机分成同样大小的两组，且主机都使用相同的网络链路进行互联，“对分带宽”就是这两组主机之间通信的总链路带宽。
