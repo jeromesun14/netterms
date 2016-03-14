@@ -71,6 +71,12 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/Erasure_code)
 ## eSDK 
 Ecosystem SDK，是华为面向行业市场合作伙伴的二次开发平台。平台统一为SI/ISV提供华为各种产品的易集成、开放的功能接口。同时，根据行业应用场景，可提供具有针对性的预集成插件，助力合作伙伴快速构建满足客户个性化需求的差异化解决方案。
 
+## Failover
+
+From: [en.wikipedia](https://en.wikipedia.org/wiki/Failover)
+
+> In computing, failover is switching to a redundant or standby computer server, system, hardware component or network upon the failure or abnormal termination of the previously active application,[1] server, system, hardware component, or network. Failover and switchover are essentially the same operation, except that failover is automatic and usually operates without warning, while switchover requires human intervention.
+
 ## Fine-grained control
 
 粒度的概念，意为控制的粒度。
