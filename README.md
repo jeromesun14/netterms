@@ -81,6 +81,9 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/Granularity) 关于 Granularit
 
 > Granularity (also called "graininess", the quality of being grainy) is the extent to which a material or system is composed of distinguishable pieces or grains. It can either refer to the extent to which a larger entity is subdivided, or the extent to which groups of smaller indistinguishable entities have joined together to become larger distinguishable entities. For example, a kilometer broken into centimeters has finer granularity than a kilometer broken into meters. In contrast, molecules of photographic emulsion may clump together to form distinct noticeable granules, reflecting coarser granularity.
 
+## FCT
+flow completion times
+
 ## FSO
 vs. RF
 
