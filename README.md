@@ -156,6 +156,11 @@ Example: convert all characters in an array to upper-case
 ## PFC
 Priority-based Flow Control
 
+## QoE
+
+From [en.wikipedia](https://en.wikipedia.org/wiki/Quality_of_experience)
+Quality of Experience (QoE, QoX or simply QX) is a measure of a customer's experiences with a service (web browsing, phone call, TV broadcast, call to a Call Center). QX focuses on the entire service experience, and is a more holistic evaluation than the more narrowly focused user experience (focused on a software interface) and customer-support experience (support focused).
+
 ## RDMA
 Remote Direct Memory Access.
 
