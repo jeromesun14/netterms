@@ -110,6 +110,31 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/GSM-R)
 From [en.wikipedia](https://en.wikipedia.org/wiki/Information_and_communications_technology)
 > Information and communications technology (ICT) is an extended term for information technology (IT) which stresses the role of unified communications and the integration of telecommunications (telephone lines and wireless signals), computers as well as necessary enterprise software, middleware, storage, and audio-visual systems, which enable users to access, store, transmit, and manipulate information.
 
+## idl
+OVSDB IDL, Open vSwitch Database Interface Definition Language。
+
+来自[ovsdb-idl.h](https://github.com/openvswitch/ovs/blob/master/lib/ovsdb-idl.h)：
+
+```
+/* Open vSwitch Database Interface Definition Language (OVSDB IDL).
+ *
+ * The OVSDB IDL maintains an in-memory replica of a database.  It issues RPC
+ * requests to an OVSDB database server and parses the responses, converting
+ * raw JSON into data structures that are easier for clients to digest.  Most
+ * notably, references to rows via UUID become C pointers.
+ *
+ * The IDL always presents a consistent snapshot of the database to its client,
+ * that is, it won't present the effects of some part of a transaction applied
+ * at the database server without presenting all of its effects.
+ *
+ * The IDL also assists with issuing database transactions.  The client creates
+ * a transaction, manipulates the IDL data structures, and commits or aborts
+ * the transaction.  The IDL then composes and issues the necessary JSON-RPC
+ * requests and reports to the client whether the transaction completed
+ * successfully.
+ */
+```
+
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
