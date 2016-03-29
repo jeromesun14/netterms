@@ -113,25 +113,31 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/Information_and_communications
 ## idl
 OVSDB IDL, Open vSwitch Database Interface Definition Language。
 
+**疑问**：每个业务 d 都要进行 `ovsrec_init()`，如果数据库过大的话，是否会导致内存不足？
+
 来自[ovsdb-idl.h](https://github.com/openvswitch/ovs/blob/master/lib/ovsdb-idl.h)：
 
 ```
 /* Open vSwitch Database Interface Definition Language (OVSDB IDL).
- *
+ * OVSDB 接口定义语言
+ * 
  * The OVSDB IDL maintains an in-memory replica of a database.  It issues RPC
  * requests to an OVSDB database server and parses the responses, converting
  * raw JSON into data structures that are easier for clients to digest.  Most
  * notably, references to rows via UUID become C pointers.
- *
+ * OVSDB IDL 维护一份数据库在内存中的复制，它关注发给 OVSDB 服务器的 RPC 请求并解析响应，将原生 JSOON 转化为客户端可读的数据结构。最值得关注的是，通过 UUID 引用 rows，变成 C 指针。
+ * 
  * The IDL always presents a consistent snapshot of the database to its client,
  * that is, it won't present the effects of some part of a transaction applied
  * at the database server without presenting all of its effects.
- *
+ * IDL 向它的客户端展现一份数据库的一致快照，因此，它在 database server 处理完事务前，不会向窗户端展现出事务处理过程中的中间状态。
+ * 
  * The IDL also assists with issuing database transactions.  The client creates
  * a transaction, manipulates the IDL data structures, and commits or aborts
  * the transaction.  The IDL then composes and issues the necessary JSON-RPC
  * requests and reports to the client whether the transaction completed
  * successfully.
+ * IDL 可辅助发送数据库事务。客户端创建一个事务，操作 IDL 数据结构，提交或取消事务。IDL 构成并发出并要的 JSON-RPC 请求，并向客户端报告事务是否已经成功完成。
  */
 ```
 
