@@ -110,37 +110,6 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/GSM-R)
 From [en.wikipedia](https://en.wikipedia.org/wiki/Information_and_communications_technology)
 > Information and communications technology (ICT) is an extended term for information technology (IT) which stresses the role of unified communications and the integration of telecommunications (telephone lines and wireless signals), computers as well as necessary enterprise software, middleware, storage, and audio-visual systems, which enable users to access, store, transmit, and manipulate information.
 
-## idl
-OVSDB IDL, Open vSwitch Database Interface Definition Language。
-
-**疑问**：每个业务 d 都要进行 `ovsrec_init()`，如果数据库过大的话，是否会导致内存不足？
-
-来自[ovsdb-idl.h](https://github.com/openvswitch/ovs/blob/master/lib/ovsdb-idl.h)：
-
-```
-/* Open vSwitch Database Interface Definition Language (OVSDB IDL).
- * OVSDB 接口定义语言
- * 
- * The OVSDB IDL maintains an in-memory replica of a database.  It issues RPC
- * requests to an OVSDB database server and parses the responses, converting
- * raw JSON into data structures that are easier for clients to digest.  Most
- * notably, references to rows via UUID become C pointers.
- * OVSDB IDL 维护一份数据库在内存中的复制，它关注发给 OVSDB 服务器的 RPC 请求并解析响应，将原生 JSOON 转化为客户端可读的数据结构。最值得关注的是，通过 UUID 引用 rows，变成 C 指针。
- * 
- * The IDL always presents a consistent snapshot of the database to its client,
- * that is, it won't present the effects of some part of a transaction applied
- * at the database server without presenting all of its effects.
- * IDL 向它的客户端展现一份数据库的一致快照，因此，它在 database server 处理完事务前，不会向窗户端展现出事务处理过程中的中间状态。
- * 
- * The IDL also assists with issuing database transactions.  The client creates
- * a transaction, manipulates the IDL data structures, and commits or aborts
- * the transaction.  The IDL then composes and issues the necessary JSON-RPC
- * requests and reports to the client whether the transaction completed
- * successfully.
- * IDL 可辅助发送数据库事务。客户端创建一个事务，操作 IDL 数据结构，提交或取消事务。IDL 构成并发出并要的 JSON-RPC 请求，并向客户端报告事务是否已经成功完成。
- */
-```
-
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
@@ -157,6 +126,73 @@ MDM （Mobile Device Management ）是企业 IT 向移动互联网过渡的平�
 
 ## OCS
 optical circuit switching (OCS)
+
+## Openvswitch
+### arc
+
+arc 用于 idl_row 的引用。
+
+```
+ /* An arc from one idl_row to another.  When row A contains a UUID that
+ * references row B, this is represented by an arc from A (the source) to B
+ * (the destination).
+ * arc 用于从一个 idl_row 指向另一个 idl_row。
+ * 当 row A 包含 UUID，该 UUID 可以引用 row B，则可通过一个 arc 表示：
+ * 从 A （源）到 B （目的）。
+ *
+ * Arcs from a row to itself are omitted, that is, src and dst are always
+ * different.
+ * 从自己到自己的 Arc 会被删除，即 src 和 dst 都是不同的。
+ * 
+ * Arcs are never duplicated, that is, even if there are multiple references
+ * from A to B, there is only a single arc from A to B.
+ * Arc 从不会被复制，即即使存在多个 A 到 B 的引用，也只有一个从 A 到 B 的 arc。
+ * 
+ * Arcs are directed: an arc from A to B is the converse of an an arc from B to
+ * A.  Both an arc and its converse may both be present, if each row refers
+ * to the other circularly.
+ * XXX: 这段不知道怎么翻译合适。
+ *
+ * The source and destination row may be in the same table or in different
+ * tables.
+ * 源和目的 row 可能在一张表，也可能在不同的表。
+ */
+```
+
+### idl
+OVSDB IDL, Open vSwitch Database Interface Definition Language。
+
+**疑问**：每个业务 d 都要进行 `ovsrec_init()`，如果数据库过大的话，是否会导致内存不足？
+
+来自[ovsdb-idl.h](https://github.com/openvswitch/ovs/blob/master/lib/ovsdb-idl.h)：
+
+```
+/* Open vSwitch Database Interface Definition Language (OVSDB IDL).
+ * OVSDB 接口定义语言
+ * 
+ * The OVSDB IDL maintains an in-memory replica of a database.  It issues RPC
+ * requests to an OVSDB database server and parses the responses, converting
+ * raw JSON into data structures that are easier for clients to digest.  Most
+ * notably, references to rows via UUID become C pointers.
+ * OVSDB IDL 维护一份数据库在内存中的复制，它关注发给 OVSDB 服务器的 RPC 请求
+ * 并解析响应，将原生 JSOON 转化为客户端可读的数据结构。最值得关注的是，
+ * 通过 UUID 引用 rows，变成 C 指针。
+ * 
+ * The IDL always presents a consistent snapshot of the database to its client,
+ * that is, it won't present the effects of some part of a transaction applied
+ * at the database server without presenting all of its effects.
+ * IDL 向它的客户端展现一份数据库的一致快照，因此，它在 database server 处理
+ * 完事务前，不会向窗户端展现出事务处理过程中的中间状态。
+ * 
+ * The IDL also assists with issuing database transactions.  The client creates
+ * a transaction, manipulates the IDL data structures, and commits or aborts
+ * the transaction.  The IDL then composes and issues the necessary JSON-RPC
+ * requests and reports to the client whether the transaction completed
+ * successfully.
+ * IDL 可辅助发送数据库事务。客户端创建一个事务，操作 IDL 数据结构，提交或取消事务。
+ * IDL 构成并发出并要的 JSON-RPC 请求，并向客户端报告事务是否已经成功完成。
+ */
+```
 
 ## Parallelism
 From [concurrency-basics.pdf](http://www.cs.umd.edu/class/fall2013/cmsc433/lectures/concurrency-basics.pdf)
