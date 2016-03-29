@@ -115,6 +115,16 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/Information_and_communications
 * task, use CPU and memory 
 * data, use network and storage
 
+## linux bonding
+
+From [kernel.org](https://www.kernel.org/doc/Documentation/networking/bonding.txt)
+
+> The Linux bonding driver provides a method for aggregating
+multiple network interfaces into a single logical "bonded" interface.
+The behavior of the bonded interfaces depends upon the mode; generally
+speaking, modes provide either hot standby or load balancing services.
+Additionally, link integrity monitoring may be performed.
+
 ## Low latency analytics
 
 ## low overhead
