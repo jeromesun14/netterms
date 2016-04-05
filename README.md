@@ -134,6 +134,27 @@ Additionally, link integrity monitoring may be performed.
 
 MDM （Mobile Device Management ）是企业 IT 向移动互联网过渡的平台技术，帮助企业将 IT 管理能力从传统的 PC 延伸到移动设备甚至 移动应用APP 。 随着时间的发展， MDM 厂商逐渐扩展出 MAM （Mobile Application Management），MEM（Mobile Email Management）和 MCM （Mobile Content Management）等更多功能。 Gartner 的MDM评测报告是目前行业最为权威的衡量标准。
 
+## MPTCP
+TCP 协议的扩展。目前已导入 Linux 内核。详见[官网](http://multipath-tcp.org/)。
+
+[RFC 6824](https://tools.ietf.org/html/rfc6824)：
+> TCP/IP communication is currently restricted to a single path per
+   connection, yet multiple paths often exist between peers.  The
+   simultaneous use of these multiple paths for a TCP/IP session would
+   improve resource usage within the network and, thus, improve user
+   experience through higher throughput and improved resilience to
+   network failure.
+
+>  Multipath TCP provides the ability to simultaneously use multiple
+   paths between peers.  This document presents a set of extensions to
+   traditional TCP to support multipath operation.  The protocol offers
+   the same type of service to applications as TCP (i.e., reliable
+   bytestream), and it provides the components necessary to establish
+   and use multiple TCP flows across potentially disjoint paths.
+
+[apple](https://support.apple.com/zh-cn/HT201373) 上的解释：
+> MPTCP 是对传输控制协议 (TCP) 规范的一组扩展，可让客户端通过不同网络适配器建立到同一目标主机的多个连接。这可在各主机间建立灵活而高效的数据连接，并且仍与现有的网络基础设施兼容。 
+
 ## OCS
 optical circuit switching (OCS)
 
