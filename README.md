@@ -334,6 +334,9 @@ Topology Description Language
 ## tight coupling
 紧耦合
 
+## TRE
+Traffic Redundancy Elimination (TRE)，流量冗余消除。
+
 ## WDM
 论文[Quartz: A New Design Element for Low-Latency DCNs
 Yunpeng](https://cs.uwaterloo.ca/~bernard/sigc318-liu.pdf)将 WDM + 普通交换机 用于数据中心，构成大二层网络，从根本上解决 server 到 server 的时延问题，而不是传统的增加 `bisection bandwidth`。
