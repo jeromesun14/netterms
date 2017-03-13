@@ -46,6 +46,9 @@ From [zh.wikipedia](https://zh.wikipedia.org/wiki/CPE)
 ## DCN
 Data Center Networks
 
+## DUT
+Device Under Test，被测设备。亦称为 equipment under test (EUT) 或 unit under test (UUT)
+
 ## East-west traffic （东西流量）
 数据中心流量的一种类型，Server <--> Server 的流量。
 与之相对应的，South-north traffic （南北流量），Server --> Client 的流量。
