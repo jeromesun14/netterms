@@ -14,6 +14,9 @@ From [Target.com](http://searchaws.techtarget.com/definition/availability-zones)
 > 
 > Similar to AWS, Google Cloud Platform gathers data centers in regions comprised of zones. Google operates regions of data centers in central United States, Western Europe and East Asia.
 
+## BD, Bridge domain
+[Juniper: Understanding Layer 2 Bridge Domains](https://www.juniper.net/techpubs/en_US/junos/topics/concept/layer-2-services-bridging-overview.html): 
+A bridge domain is a set of logical ports that share the same flooding or broadcast characteristics. Like a virtual LAN (VLAN), a bridge domain spans one or more ports of multiple devices.
 
 
 ## bisection bandwidth
