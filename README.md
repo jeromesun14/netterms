@@ -183,6 +183,14 @@ Additionally, link integrity monitoring may be performed.
 ## low overhead
 低开销
 
+## malformed packet
+
+格式错误的数据包
+
+## Martian Address
+
+一般指特殊用途 IP。
+
 ## MDM
 
 MDM （Mobile Device Management ）是企业 IT 向移动互联网过渡的平台技术，帮助企业将 IT 管理能力从传统的 PC 延伸到移动设备甚至 移动应用APP 。 随着时间的发展， MDM 厂商逐渐扩展出 MAM （Mobile Application Management），MEM（Mobile Email Management）和 MCM （Mobile Content Management）等更多功能。 Gartner 的MDM评测报告是目前行业最为权威的衡量标准。
