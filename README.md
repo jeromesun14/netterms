@@ -116,6 +116,10 @@ From [en.wikipedia](https://en.wikipedia.org/wiki/GSM-R)
 From [en.wikipedia](https://en.wikipedia.org/wiki/Information_and_communications_technology)
 > Information and communications technology (ICT) is an extended term for information technology (IT) which stresses the role of unified communications and the integration of telecommunications (telephone lines and wireless signals), computers as well as necessary enterprise software, middleware, storage, and audio-visual systems, which enable users to access, store, transmit, and manipulate information.
 
+# ILA, Identifier Locator Addressing
+
+一种用于数据中心虚拟化的技术，将 Locator + identifier 映射为一个 IPv6 地址进行转发。详见 LWN 文章《[net: Identifier Locator Addressing](https://lwn.net/Articles/647515/)》。
+
 ## Job, task and data
 * job, task + data 
 * task, use CPU and memory 
