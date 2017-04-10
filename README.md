@@ -286,6 +286,10 @@ OVSDB IDL, Open vSwitch Database Interface Definition Language。
  */
 ```
 
+## OOB
+
+Out of Band
+
 ## Parallelism
 From [concurrency-basics.pdf](http://www.cs.umd.edu/class/fall2013/cmsc433/lectures/concurrency-basics.pdf)
 
